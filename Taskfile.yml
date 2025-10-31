@@ -1,0 +1,11 @@
+# https://taskfile.dev
+
+version: '3'
+
+tasks:
+  default:
+    env:
+      GOOS: windows
+    cmds:
+      - go build -o obs-gracefull-shutdown.exe
+    silent: true
